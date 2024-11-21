@@ -1,0 +1,55 @@
+//
+//  Localizable.strings
+//  HGithubClient
+//
+//  Created by Bell Dien on 2024/11/20.
+//
+
+// regular
+"tryAgain" = "再试一次";
+"error" = "错误";
+"noInternet" = "没有网络";
+"noData" = "没有数据";
+"login" = "登录";
+"logout" = "登出";
+"cancel" = "取消";
+"ok" = "确定";
+"invalideUsernameOrPassword" = "用户名或密码错误";
+"confirmLogout" = "你要登出吗？";
+"loading" = "加载中...";
+"biometricReason" = "请验证您的身份以获取您的用户名和密码";
+"biometricLogin" = "生物识别登录";
+
+// home
+"home" = "首页";
+"welcome" = "欢迎";
+"trending" = "GitHub趋势";
+
+// profile
+"profile" = "个人资料";
+"repositories" = "我的仓库";
+"followers" = "粉丝";
+"following" = "关注";
+"winningStars" = "获得点赞";
+"starred" = "收藏";
+"changeAvatar" = "更改头像";
+"addAvatar" = "添加头像";
+
+// error
+"failedToLoad" = "加载失败";
+"anErrorOccurred" = "发生了错误";
+"refreshData" = "刷新数据";
+"confirmLogout" = "你要登出吗？";
+"noDataReceived" = "没有收到数据";
+"failedToDecode" = "数据错误";
+"invalidURL" = "无效的访问地址";
+"searchFailed" = "搜索失败";
+"unknownError" = "未知错误";
+"loadingFailed" = "加载失败";
+"biometricFailed" = "生物识别失败，请用密码登录";
+
+// search
+"search" = "搜索";
+"searchPlaceholder" = "输入要搜索的内容";
+"searching" = "搜索中...";
+"seeOnGithub" = "在GitHub上查看";

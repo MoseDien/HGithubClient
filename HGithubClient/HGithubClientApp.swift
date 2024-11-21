@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct HGithubClientApp: App {
+    @StateObject private var authViewModel = AuthViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authViewModel.isLoggedIn {
+                HomeView()
+                    .environmentObject(authViewModel)
+            } else {
+                HomeView()
+                    .environmentObject(authViewModel)
+            }
         }
     }
 }
