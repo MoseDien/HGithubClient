@@ -1,11 +1,13 @@
 # HGithubClient
 - Bell Zheng
+- 请查看[演示视频](./HGithubClient-demo.mp4)
 
 ## 特性
+- 使用swiftui
 - 用户名密码和生物登录，使用keychain存储用户名和密码
 - 使用Github search API - https://api.github.com/search/repositories
 - 登录之后设置头像
-- 支持dark/light mode
+- 支持dark/light mode, 支持横竖屏
 - 使用 MVVM 模式
 - 针对ViewModel的单元测试
 
