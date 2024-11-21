@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DE3CD4244DBCB679978B9932 /* Pods_HGithubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86302BFBDC35461C7E85F9E /* Pods_HGithubClient.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		28F220DE2CEDE84C00429888 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F255022D60D7D3C31B77CA8 /* Pods-HGithubClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGithubClient.release.xcconfig"; path = "Target Support Files/Pods-HGithubClient/Pods-HGithubClient.release.xcconfig"; sourceTree = "<group>"; };
 		28F220CD2CEDE84900429888 /* HGithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F220DD2CEDE84C00429888 /* HGithubClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGithubClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F220E72CEDE84C00429888 /* HGithubClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGithubClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86302BFBDC35461C7E85F9E /* Pods_HGithubClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGithubClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E143125743DECE03302CDEB4 /* Pods-HGithubClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGithubClient.debug.xcconfig"; path = "Target Support Files/Pods-HGithubClient/Pods-HGithubClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3CD4244DBCB679978B9932 /* Pods_HGithubClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D0F99F4F1B3AECD05287BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C86302BFBDC35461C7E85F9E /* Pods_HGithubClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		28F220C42CEDE84900429888 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +95,8 @@
 				28F220E02CEDE84C00429888 /* HGithubClientTests */,
 				28F220EA2CEDE84C00429888 /* HGithubClientUITests */,
 				28F220CE2CEDE84900429888 /* Products */,
+				E4F978A790EEA9D0DDA2463C /* Pods */,
+				01D0F99F4F1B3AECD05287BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +110,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E4F978A790EEA9D0DDA2463C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E143125743DECE03302CDEB4 /* Pods-HGithubClient.debug.xcconfig */,
+				1F255022D60D7D3C31B77CA8 /* Pods-HGithubClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28F220F12CEDE84C00429888 /* Build configuration list for PBXNativeTarget "HGithubClient" */;
 			buildPhases = (
+				087DD8AB78EE4ECCBDABB460 /* [CP] Check Pods Manifest.lock */,
 				28F220C92CEDE84900429888 /* Sources */,
 				28F220CA2CEDE84900429888 /* Frameworks */,
 				28F220CB2CEDE84900429888 /* Resources */,
+				285284A62CEF7F570006FA33 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -111,8 +140,6 @@
 				28F220CF2CEDE84900429888 /* HGithubClient */,
 			);
 			name = HGithubClient;
-			packageProductDependencies = (
-			);
 			productName = HGithubClient;
 			productReference = 28F220CD2CEDE84900429888 /* HGithubClient.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +161,6 @@
 				28F220E02CEDE84C00429888 /* HGithubClientTests */,
 			);
 			name = HGithubClientTests;
-			packageProductDependencies = (
-			);
 			productName = HGithubClientTests;
 			productReference = 28F220DD2CEDE84C00429888 /* HGithubClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +182,6 @@
 				28F220EA2CEDE84C00429888 /* HGithubClientUITests */,
 			);
 			name = HGithubClientUITests;
-			packageProductDependencies = (
-			);
 			productName = HGithubClientUITests;
 			productReference = 28F220E72CEDE84C00429888 /* HGithubClientUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +253,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		087DD8AB78EE4ECCBDABB460 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HGithubClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		285284A62CEF7F570006FA33 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, please install it using 'brew install swiftlint' or add it to your Podfile.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28F220C92CEDE84900429888 /* Sources */ = {
@@ -390,6 +455,7 @@
 		};
 		28F220F22CEDE84C00429888 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E143125743DECE03302CDEB4 /* Pods-HGithubClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,6 +488,7 @@
 		};
 		28F220F32CEDE84C00429888 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F255022D60D7D3C31B77CA8 /* Pods-HGithubClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

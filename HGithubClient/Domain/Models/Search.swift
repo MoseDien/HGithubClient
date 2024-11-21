@@ -6,10 +6,6 @@
 //
 import Foundation
 
-struct SearchResponse: Decodable {
-    let items: [Repository]
-}
-
 struct Repository: Identifiable, Decodable {
     let id: Int
     let name: String
