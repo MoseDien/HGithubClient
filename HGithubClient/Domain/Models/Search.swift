@@ -6,6 +6,7 @@
 //
 import Foundation
 
+// swiftlint:disable identifier_name
 struct Repository: Identifiable, Decodable {
     let id: Int
     let name: String
@@ -19,4 +20,4 @@ struct Repository: Identifiable, Decodable {
         let avatar_url: String
     }
 }
-
+// swiftlint:enable identifier_name

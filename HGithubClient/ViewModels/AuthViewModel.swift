@@ -5,15 +5,15 @@
 //  Created by Bell Dien on 2024/11/20.
 //
 
-import LocalAuthentication
 import Combine
+import LocalAuthentication
 
 private let keyUser = "username"
 private let keyPassword = "password"
 
 class AuthViewModel: ObservableObject {
     @Published var isLoggedIn: Bool = false
-    @Published var errorMessage: String? = nil
+    @Published var errorMessage: String?
     @Published var username: String = ""
     @Published var uiState: ViewState = .loading
 

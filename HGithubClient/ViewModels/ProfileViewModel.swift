@@ -8,7 +8,7 @@
 import Combine
 
 class ProfileViewModel: ObservableObject {
-    @Published var profile: Profile? = nil
+    @Published var profile: Profile?
     @Published var uiState: ViewState = .loading
 
     @MainActor

@@ -1,6 +1,12 @@
+severity:
+  warning: error
+
 disabled_rules: 
-  - line_length
-  - cyclomatic_complexity
+  - trailing_whitespace
+
+sorted_imports:
+  enabled: true
+  ignore_case: false
 
 opt_in_rules:
   - empty_count

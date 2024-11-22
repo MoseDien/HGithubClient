@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @StateObject var viewModel = ProfileViewModel()
     @EnvironmentObject var authViewModel: AuthViewModel
-    @State private var avatarImage: UIImage? = nil
+    @StateObject var viewModel = ProfileViewModel()
+    @State private var avatarImage: UIImage?
     @State private var isPickerPresented: Bool = false
     
     var body: some View {
@@ -41,7 +41,7 @@ struct ProfileView: View {
                     .bold()
                 Divider()
                 VStack(alignment: .leading, spacing: 10) {
-                    HStack{
+                    HStack {
                         Text(localizedString("repositories"))
                         Text("\(viewModel.profile?.repositories ?? 0)")
                     }
@@ -60,7 +60,6 @@ struct ProfileView: View {
                     }
                 }
             }
-            
             Button(action: {
                 Task {
                     await viewModel.fetch()
@@ -77,26 +76,24 @@ struct ProfileView: View {
     }
 }
 
-private let AVATAR_SIZE: CGFloat = 100
+private let avatarSize: CGFloat = 100
 extension ProfileView {
-    
     var avatarView: some View {
         VStack {
             if let avatarImage = avatarImage {
                 Image(uiImage: avatarImage)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: AVATAR_SIZE, height: AVATAR_SIZE)
+                    .frame(width: avatarSize, height: avatarSize)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.blue, lineWidth: 3))
                     .shadow(radius: 5)
             } else {
                 Image(systemName: "person.circle")
                     .resizable()
-                    .frame(width: AVATAR_SIZE, height: AVATAR_SIZE)
+                    .frame(width: avatarSize, height: avatarSize)
                     .clipShape(Circle())
             }
-            
             let title: String = avatarImage == nil ? localizedString("addAvatar") : localizedString("changeAvatar")
             Button(title) {
                 isPickerPresented = true

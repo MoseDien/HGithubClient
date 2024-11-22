@@ -53,18 +53,18 @@ extension SearchView {
                 Task {
                     await viewModel.search()
                 }
-            }) {
+            }, label: {
                 Text(localizedString("search"))
                     .padding(.horizontal)
                     .padding(.vertical, 8)
                     .background(Color.primaryButtonColor)
                     .foregroundColor(.white)
                     .cornerRadius(8)
-            }
+            })
         }
         .padding()
     }
-    
+
     var searchResultView: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
